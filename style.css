@@ -1,0 +1,94 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+body {
+    line-height: 1.5;
+    font-weight: 300;
+    background-image:linear-gradient(rgb(42, 190, 192),rgb(247, 188, 80) );
+    height: 100vh;
+}
+
+.note {
+    margin: 3.1rem auto;
+    padding: 0 2rem;
+}
+
+.note h2 {
+    text-align: center;
+    font-size: 3em;
+    opacity: 0.8;
+    color: rgb(228, 64, 64);
+}
+
+.note-input {
+    margin: 4rem 25rem;
+}
+
+#note-title , #note-content{
+    width: 100%;
+    border: 3px solid white;
+    padding: 0.5rem;
+    font-size: 1.2em;
+}
+
+#note-content{
+    resize: none;
+}
+
+#note-title:focus,
+#note-content:focus{
+    outline: 0;
+}
+
+#addnote-btn{
+    background-color: rgb(228, 64, 64);
+    border: rgb(228, 64, 64) solid 2px;
+    border-radius: 50%;
+    padding: 0.5rem;
+    color: white;
+    float: right;
+    cursor: pointer;
+    transition:all 0.5s ease-in-out ;
+}
+
+.note-area{
+    margin: 6rem 0;
+}
+
+.note-item{
+    background: white;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+#delnote-btn{
+    background-color: rgb(228, 64, 64);
+    border: rgb(228, 64, 64) solid 2px;
+    padding: 0.5rem;
+    color: white;
+    float: right;
+    cursor: pointer;
+    transition:all 0.5s ease-in-out ;
+    border-radius: 10px;
+}
+
+.note-item h3 {
+    margin-bottom: 0.5rem;
+}
+
+.note-item p {
+    padding-bottom: 0.5rem;
+}
+
+@media screen and (min-width: 900px){
+    .note-area{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+    
+}
