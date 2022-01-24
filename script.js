@@ -99,7 +99,7 @@ function deleteNote(e){
         e.target.parentElement.remove();
         let divID = e.target.parentElement.dataset.id;
         let notes = getDataFromStorage();
-        let newNotesList = note.filter(item => {
+        let newNotesList = notes.filter(item => {
             return item.id !== parseInt(divID);
         });
         localStorage.setItem("notes", JSON.stringify(newNotesList));

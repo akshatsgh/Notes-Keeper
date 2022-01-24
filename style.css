@@ -25,7 +25,8 @@ body {
 }
 
 .note-input {
-    margin: 4rem 25rem;
+    margin: 4rem auto;
+    padding: 0 25rem;
 }
 
 #note-title , #note-content{
@@ -91,4 +92,8 @@ body {
         grid-template-columns: repeat(3,1fr);
     }
     
+}
+
+.warning {
+    border-color: red !important;
 }
