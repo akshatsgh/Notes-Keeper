@@ -26,11 +26,13 @@ body {
 
 .note-input {
     margin: 4rem auto;
-    padding: 0 25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #note-title , #note-content{
-    width: 100%;
+    width: 40%;
     border: 3px solid white;
     padding: 0.5rem;
     font-size: 1.2em;
@@ -62,7 +64,7 @@ body {
 
 .note-item{
     background: white;
-    margin: 1rem;
+    margin: 2rem;
     padding: 1rem;
     border-radius: 10px;
 }
